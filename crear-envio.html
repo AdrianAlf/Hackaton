@@ -33,6 +33,12 @@
     <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
     <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
 <![endif]-->
+<style>
+    #map{
+        height: 400px;
+        width: 100%;
+    }
+</style>
 </head>
 <body class="fix-header fix-sidebar card-no-border" >
     <!-- ============================================================== -->
@@ -254,16 +260,10 @@
                                             <label for="exampleInputPassword1">Teléfono Destinatario</label>
                                             <input type="number" class="form-control" id="exampleInputPassword1" placeholder="">
                                         </div>
-                                        <div class="form-group">
+                                        <div class="form-group" id = "map">
                                             <label for="exampleInputPassword1">Lugar Origen</label>
                                             <input type="text" class="form-control" id="exampleInputPassword1" placeholder="">
                                         </div>
-                                        <!-- <div id="google_map" style="width: 600px; height: 400px;"></div>  
-                                        <form action="#" onsubmit="setDirections(this.from.value); return false">  
-                                        <input type="text" size="43" id="fromAddress" name="from" value=""/>  
-                                        <input type="submit" value="Calcula la ruta">  
-                                         </form>  
-                                             <div id="direcciones" style="width: 500px;"></div> -->
                                         <div class="form-group">
                                             <label for="exampleInputPassword1">Lugar Destino</label>
                                             <input type="text" class="form-control" id="exampleInputPassword1" placeholder="">
@@ -302,7 +302,7 @@
             <!-- ============================================================== -->
             <!-- footer -->
             <!-- ============================================================== -->
-            <footer class="footer"> © 2019 ITCULIACAN EMBARQUE HACKATON </footer>
+            <footer class="footer"> © 2019 ITCULIACAN EMBARQUE HACKATHON </footer>
             <!-- ============================================================== -->
             <!-- End footer -->
             <!-- ============================================================== -->
@@ -319,6 +319,29 @@
     <!-- ============================================================== -->
     <!-- All Jquery -->
     <!-- ============================================================== -->
+    <!-- <script>
+        function initMap(){
+            //map options
+             var options = {
+                 zoom:8,
+                 center:{lat:27.35,lng:-102.0167}
+            }
+            var map = new google.maps.Map(document.getElementById('map'),options);
+            var marker = new google.maps.marker({
+                position:{lat:27.35,lng:102.0167},
+                map:map,
+                icon:'https://developers.google.com/maps/documentation/javascript/examples/full/images/beachflag.png'
+            });
+            var infoWindows = new google.maps.infoWindows({
+                content:'<h1>Lynn MA</h1>'
+            });
+            marker.addListener('click', function(){
+                infoWindow.open(mapp, marker);
+            });
+        }
+    </script>
+    <script async defer
+  src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCQQ6yjrkDiPlDfuPn2LhqvQw7P0nSFbKM&callback=initMap"></script> -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
     <script src="main/js/componentes-jquery.js"></script>
     <script src="assets/plugins/jquery/jquery.min.js"></script>
