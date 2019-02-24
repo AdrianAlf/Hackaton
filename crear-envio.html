@@ -189,6 +189,7 @@
                             <ul aria-expanded="false" class="collapse">
                                 <li><a href="crear-envio.html">Registrar</a></li>
                                 <li><a href="consultar-envio.html">Consultar</a></li>
+                                <li><a href="despacho-embargue.html">Salida</a></li>
                             </ul>
                         </li>
                         <li> <a class="has-arrow waves-effect waves-dark" href="#" aria-expanded="false"><i class="fas fa-user"></i><span class="hide-menu">Gestión Choferes</span></a>
@@ -249,7 +250,7 @@
                                 <div class="col-sm-12 col-xs-12">
                                     <form>
                                         <div class="form-group">
-                                            <label for="exampleInputEmail1">ID Camión</label>
+                                            <label for="exampleInputEmail1">Folio</label>
                                             <input type="number" class="form-control" id="exampleInputEmail1" placeholder="">
                                         </div>
                                         <div class="form-group">
@@ -260,18 +261,29 @@
                                             <label for="exampleInputPassword1">Teléfono Destinatario</label>
                                             <input type="number" class="form-control" id="exampleInputPassword1" placeholder="">
                                         </div>
-                                        <div class="form-group" id = "map">
+                                        <div class="form-group">
                                             <label for="exampleInputPassword1">Lugar Origen</label>
-                                            <input type="text" class="form-control" id="exampleInputPassword1" placeholder="">
+                                            <textarea type="text" class="form-control" id="exampleInputPassword1" placeholder="" rows="3" cols="50"></textarea>
                                         </div>
                                         <div class="form-group">
                                             <label for="exampleInputPassword1">Lugar Destino</label>
-                                            <input type="text" class="form-control" id="exampleInputPassword1" placeholder="">
+                                            <textarea type="text" class="form-control" id="exampleInputPassword1" placeholder="" rows="3" cols="50"></textarea>
+                                        </div>
+                                        <div class="form-group">
+                                                <label for="exampleInputPassword1">Contenido</label>
+                                                <textarea type="textarea" class="form-control" id="exampleInputPassword1" placeholder="" rows="5" cols="50"></textarea>
                                         </div>
                                         <hr/>
                                         <div class="form-group">
+                                                <label for="exampleInputPassword1">Cantidad de tarimas</label>
+                                                <input type="number" class="form-control" id="exampleInputPassword1" placeholder="">
+                                            </div>
+                                            <hr/>
+                                        <div class="form-group">
                                             <label for="exampleInputPassword1">Datos del Dispositivo</label><br>
                                             <div class = "datos-dispositivo">
+                                                <label for="exampleInputPassword1">Identificador</label>
+                                                <input type="number" class="form-control" id="exampleInputPassword1" placeholder="">
                                                 <label for="exampleInputPassword1">Mínimo humedad</label>
                                                 <input type="number" class="form-control" id="exampleInputPassword1" placeholder="">
                                                 <label for="exampleInputPassword1">Máximo humedad</label>
